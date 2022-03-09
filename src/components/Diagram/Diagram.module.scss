@@ -1,0 +1,100 @@
+.container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: stretch;
+    width: 14rem;
+
+    &Lg {
+        width: 17rem;
+    }
+}
+
+.fret {
+    align-items: stretch;
+    display: flex;
+    flex-grow: 1;
+    justify-content: stretch;
+
+    &Last .string {
+        border-bottom: solid 1px black;
+    }
+}
+
+.string {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: black;
+    border-bottom-width: 0;
+    border-right-width: 0;
+
+    &:last-child {
+        border-width: 0;
+        border-left-width: .1rem;
+        width: 2.5rem;
+        flex-grow: initial;
+    }
+}
+
+.fretNumber {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    width: 1.5rem;
+}
+
+.stringCounter {
+    align-items: center;
+    display: flex;
+    height: 2rem;
+    justify-content: flex-start;
+    padding-top: .5rem;
+}
+
+.stringNames {
+    display: flex;
+    justify-content: stretch;
+    padding: .3rem 0 0 2.5rem;
+}
+
+.stringName {
+    border-left: solid .1rem transparent;
+    display: flex;
+    flex-grow: 1;
+    font-size: 1rem;
+    justify-content: flex-start;
+
+    &:last-child {
+        flex-grow: initial;
+        width: 2.5rem;
+    }
+}
+
+.stringNameText {
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.note {
+    $note-size: 1.6rem;
+
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-size: 1.2rem;
+    height: $note-size;
+    justify-content: center;
+    position: relative;
+    width: $note-size;
+    position: absolute;
+    transform: translateX(-50%);
+}
