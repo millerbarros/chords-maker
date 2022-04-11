@@ -16,7 +16,6 @@
     display: flex;
     flex-grow: 1;
     justify-content: stretch;
-
     &Last .string {
         border-bottom: solid 1px black;
     }
@@ -65,7 +64,7 @@
 }
 
 .stringName {
-    border-left: solid .1rem transparent;
+    border-left: solid 0.1rem transparent;
     display: flex;
     flex-grow: 1;
     font-size: 1rem;
@@ -85,9 +84,9 @@
 .note {
     $note-size: 1.6rem;
 
+    border-radius: 50%;
     align-items: center;
     background-color: red;
-    border-radius: 50%;
     color: white;
     display: flex;
     font-size: 1.2rem;
